@@ -1,0 +1,16 @@
+{
+    "name": "kzajaczkowski/lab-composer",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Kzajaczkowski\\LabComposer\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Krystian Zajaczkowski"
+        }
+    ],
+    "require": {}
+}
