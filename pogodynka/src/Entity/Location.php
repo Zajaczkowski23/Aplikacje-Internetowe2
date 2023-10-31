@@ -36,6 +36,11 @@ class Location
         $this->weather = new ArrayCollection();
     }
 
+    public function __toString(): string
+    {
+        return $this->name . ', ' . $this->Country;
+    }
+
     public function getId(): ?int
     {
         return $this->id;
