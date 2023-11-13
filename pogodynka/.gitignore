@@ -19,7 +19,7 @@
 /phpunit.xml
 ###< symfony/phpunit-bridge ###
 
-.history/
-
+.history/*
+../history/*
 *.pdf
 *.docx

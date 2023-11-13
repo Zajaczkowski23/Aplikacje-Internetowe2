@@ -19,8 +19,12 @@
             <div class="bg-ligth p-4">
                 <div class="flex">
                     <div class="list-group">
-                        <a class="bg-ligth text-dark list-group-item list-group-item-action" href="{{ path('app_location_index') }}">Locations</a>
-                        <a class="bg-ligth text-dark list-group-item list-group-item-action" href="{{ path('app_measurement_index') }}">Measurements</a>
+                        {% if is_granted('ROLE_LOCATION_INDEX') %}
+                            <a class="bg-ligth text-dark list-group-item list-group-item-action" href="{{ path('app_location_index') }}">Locations</a>
+                        {% endif %}
+                        {% if is_granted('ROLE_MEASUREMENT_INDEX') %}
+                            <a class="bg-ligth text-dark list-group-item list-group-item-action" href="{{ path('app_measurement_index') }}">Measurements</a>
+                        {% endif %}
                     </div>
                 </div>
             </div>
